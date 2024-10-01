@@ -1,0 +1,32 @@
+<div id="container_main">
+    <div id="button-plus" onclick="toggleForm()">
+        <div class="plus-sign">+</div>
+    </div>
+
+    <div id="container_modal_add" style="display: none;">
+        <form action="/addNote" method="post">
+            <div>
+                <label for="note-title">Título</label>
+                <input type="text" id="note-title" name="title" required>
+            </div>
+            <div>
+                <label for="note-description">Observação</label>
+                <input type="text" id="note-description" name="description">
+            </div>
+            <div>
+               <label for="note-time">Horário</label>
+                <input type="datetime-local" id="note-time" name="time" required>
+            </div>
+            <div>
+                <input type="submit" value="Adicionar Nota">
+            </div>
+        </form>
+    </div>
+
+    <div id="container_notes">
+    </div>
+</div>
+
+<script src="/script/delNote.js"></script>
+<script src="/script/formControls.js"></script> 
+<script src="/script/getNotes.js"></script>

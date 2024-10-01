@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "mysql2": "^3.9.7",
+    "node": "^18.20.3",
+    "nodemon": "^3.1.0"
+  },
+  "name": "despertar",
+  "version": "1.0.0",
+  "description": "Projetada para ajudar os usuários a gerenciar suas atividades diárias e compromissos por meio de lembretes e alertas.",
+  "main": "index/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index/index.js localhost:3000"
+  },
+  "author": "Mateus Vinícios / Eliete Macedo",
+  "license": "ISC"
+}
